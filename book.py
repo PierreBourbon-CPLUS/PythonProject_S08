@@ -118,16 +118,4 @@ class Book:
                         self.SellOrders.pop(0)
                         self.BuyOrders[0].NbrAction = self.BuyOrders[0].NbrAction - QuantityTraded
                         print("TRADE ACTIVATED : \n Sold",QuantityTraded, "@", TradePrice)
-        self.display_log()  
-      
-
-
-book = Book('TEST')
-book.insert_Buy(10,10.0)
-book.insert_Buy(1,10.0)
-book.insert_Buy(160,15.0)
-book.insert_Sell(120,12.0)
-book.insert_Buy(5, 10.0)
-book.insert_Buy(2,11.0)
-book.insert_Sell(110,10.0)
-book.insert_Sell(10,10.0)
+        self.display_log()
